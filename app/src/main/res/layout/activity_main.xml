@@ -29,106 +29,102 @@
         app:layout_constraintTop_toBottomOf="@+id/Title">
 
         <LinearLayout
-            android:layout_width="409dp"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/textPrice"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Buying Price"
-                android:textSize="20sp" />
+                android:text="Buying Price" />
 
             <EditText
                 android:id="@+id/editPrice"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:ems="8"
+                android:ems="10"
                 android:hint="Purchase price of car"
-                android:inputType="textPersonName" />
+                android:inputType="numberDecimal"
+                android:minHeight="48dp" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="horizontal">
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/textDPAmount"
-                android:layout_width="104dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Down Payment"
-                android:textSize="20sp" />
+                android:text="Down Payment" />
 
             <EditText
                 android:id="@+id/editDPAmount"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:ems="10"
                 android:hint="Down payment amount"
-                android:inputType="textPersonName" />
-
+                android:inputType="numberDecimal"
+                android:minHeight="48dp" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="horizontal">
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/textIRate"
-                android:layout_width="104dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Interest Rate"
-                android:textSize="20sp" />
+                android:text="Interest Rate" />
 
             <EditText
                 android:id="@+id/editIRate"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:ems="10"
                 android:hint="Annual interest rate"
-                android:inputType="textPersonName" />
+                android:inputType="numberDecimal"
+                android:minHeight="48dp" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="horizontal">
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/textLoanLength"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Loan Length"
-                android:textSize="20sp" />
+                android:text="Loan Length" />
 
             <EditText
                 android:id="@+id/editLoanLength"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:ems="10"
                 android:hint="Length in months"
-                android:inputType="textPersonName" />
+                android:inputType="number"
+                android:minHeight="48dp" />
         </LinearLayout>
 
         <ToggleButton
             android:id="@+id/toggleButton"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="62dp"
             android:text="ToggleButton"
             android:textOff="Loan"
             android:textOn="Lease" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:text="Calculate Monthly Payment" />
 
     </LinearLayout>
 
